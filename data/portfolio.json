@@ -1,0 +1,61 @@
+{
+  "portfolio_id": "DEMO-001",
+  "name": "演示组合",
+  "currency": "CNY",
+  "snapshot_id": "SNAP-20261102",
+  "snapshot_at": "2026-11-02T15:00:00+08:00",
+  "cash": "20000.00",
+  "instruments": [
+    {
+      "symbol": "A01",
+      "name": "星河科技",
+      "industry": "科技",
+      "price": "100.00",
+      "quantity": 400
+    },
+    {
+      "symbol": "A02",
+      "name": "云帆软件",
+      "industry": "科技",
+      "price": "50.00",
+      "quantity": 400
+    },
+    {
+      "symbol": "A03",
+      "name": "安和医疗",
+      "industry": "医疗",
+      "price": "100.00",
+      "quantity": 100
+    },
+    {
+      "symbol": "A04",
+      "name": "悦享消费",
+      "industry": "消费",
+      "price": "50.00",
+      "quantity": 100
+    },
+    {
+      "symbol": "A05",
+      "name": "远川能源",
+      "industry": "能源",
+      "price": "100.00",
+      "quantity": 30
+    },
+    {
+      "symbol": "A06",
+      "name": "衡远制造",
+      "industry": "工业",
+      "price": "100.00",
+      "quantity": 20
+    }
+  ],
+  "rules": {
+    "single_instrument_threshold": "0.30",
+    "industry_threshold": "0.50",
+    "comparison": "strictly_greater_than",
+    "cash_in_denominator": true,
+    "cash_in_industry": false,
+    "quantity": "positive_integer",
+    "fees": "0.00"
+  }
+}

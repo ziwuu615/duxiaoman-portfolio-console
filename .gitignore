@@ -1,0 +1,12 @@
+node_modules/
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# 运行期产生的文件（不进入版本库）
+data/plans.json.corrupt-*
+data/*.tmp
+tools/.chrome-profile/
+
+# 截图工具的临时输出
+docs/screenshots/_tmp/

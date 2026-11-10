@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-console",
+  "version": "1.0.0",
+  "private": true,
+  "description": "投资组合分析与调仓模拟（度小满全栈开发实习技术测评）",
+  "main": "server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test",
+    "test:inproc": "node tests/run-all.js",
+    "test:verbose": "node --test --test-reporter=spec",
+    "screenshots": "node tools/capture-screenshots.js"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "UNLICENSED"
+}
