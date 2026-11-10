@@ -223,6 +223,16 @@ plans.json 落盘结构：schemaVersion=1  plans=1  holdingsInBase=6  ops=2  sum
 **方式**：`tools/capture-screenshots.js` 通过 CDP 驱动本机 Edge 无头浏览器，执行真实点击（选标的、填数量、点添加、点保存、刷新、重新打开），
 并对页面上的数字做断言；断言失败即中止，不产出截图。
 
+**与任务书 4.2「四类截图」的对应关系**：
+
+| 任务书要求的截图 | 对应文件 |
+| --- | --- |
+| 初始组合 | `docs/screenshots/01-overview.png` |
+| 模拟对比 | `docs/screenshots/02-simulation-compare.png` |
+| 错误反馈 | `docs/screenshots/03-invalid-operation.png` |
+| 已保存方案 | `docs/screenshots/04-plan-saved.png` |
+| （附加）重启服务后重新打开 | `docs/screenshots/05-plan-reopened-after-restart.png` |
+
 **脚本输出**：
 
 ```

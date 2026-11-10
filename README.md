@@ -143,6 +143,9 @@ node tests/run-all.js
 
 ## 7. 页面截图
 
+对应任务书 4.2 的四类截图：初始组合 → `01-overview.png`；模拟对比 → `02-simulation-compare.png`；
+错误反馈 → `03-invalid-operation.png`；已保存方案 → `04-plan-saved.png`（另附重启后重开 `05-plan-reopened-after-restart.png`）。
+
 初始组合（总资产 100,000.00、A01 40%、科技 60% 两项提醒）：
 
 ![初始组合](docs/screenshots/01-overview.png)
@@ -151,11 +154,11 @@ node tests/run-all.js
 
 ![模拟对比](docs/screenshots/02-simulation-compare.png)
 
-| 截图 | 场景 |
-| --- | --- |
-| [03-invalid-operation.png](docs/screenshots/03-invalid-operation.png) | 无效操作：从原始组合买入 A01 201 股被拒绝，显示 `INSUFFICIENT_CASH`、差额与「最多可买入 200 股」建议；操作序列仍为 0 笔 |
-| [04-plan-saved.png](docs/screenshots/04-plan-saved.png) | 方案保存成功并出现在「已保存方案」列表 |
-| [05-plan-reopened-after-restart.png](docs/screenshots/05-plan-reopened-after-restart.png) | 重启服务后重新打开方案：只读横幅、结果与保存时一致、原始组合不变 |
+| 截图 | 类别 | 场景 |
+| --- | --- | --- |
+| [03-invalid-operation.png](docs/screenshots/03-invalid-operation.png) | 错误反馈 | 从原始组合买入 A01 201 股被拒绝，显示 `INSUFFICIENT_CASH`、需要 20,100.00 / 可用 20,000.00 与「最多可买入 200 股」建议；操作序列仍为 0 笔 |
+| [04-plan-saved.png](docs/screenshots/04-plan-saved.png) | 已保存方案 | 方案保存成功并出现在「已保存方案」列表 |
+| [05-plan-reopened-after-restart.png](docs/screenshots/05-plan-reopened-after-restart.png) | 重启后重开（附加） | 重启服务后重新打开方案：只读横幅、结果与保存时一致、原始组合不变 |
 
 重新生成截图（需要本机 Edge/Chrome；脚本会使用临时数据目录，不会污染 `data/plans.json`）：
 
