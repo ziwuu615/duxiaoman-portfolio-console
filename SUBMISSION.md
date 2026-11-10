@@ -6,7 +6,8 @@
 | 候选人 | 朱家如 |
 | 岗位 | 度小满 · 全栈开发实习 |
 | 提交日期 | 2026-11-10 |
-| 交付形式 | 源码压缩包（本仓库根目录 `portfolio-console/`），评审者本地 `node server.js` 即可运行 |
+| 代码仓库 | https://github.com/ziwuu615/duxiaoman-portfolio-console（public，与压缩包内容一致） |
+| 交付形式 | 源码压缩包（本仓库根目录 `portfolio-console/`）+ GitHub 仓库；评审者本地 `node server.js` 即可运行 |
 
 ## 1. 材料清单（对照任务书 4.2）
 
@@ -60,7 +61,7 @@ node tests/run-all.js   # 或 npm test；预期 37 passed
 2. `node --test` 在禁止派生子进程的受限环境会报 `spawn EPERM`，已提供 `npm run test:inproc` 兜底。
 3. 仅支持两位小数价格与正整数数量，不支持零股/碎股。
 4. 仅在 Edge（Chromium）实测过页面；Safari / Firefox 未实测。
-5. 移动端只做了基础响应式，未做触屏专项优化。
+5. 桌面优先：按 1440px 评审场景设计；窄屏（≤1180px）自动单列、表格在卡片内横向滚动，但移动端不属于本次测评范围，未做触屏专项优化。
 
 ## 5. 我对本次交付的判断
 
